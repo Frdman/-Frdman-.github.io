@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-image: url('white-paper.png');
+    background-size: 179px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #44783c;
+    padding-bottom: 20px;
+    margin: 0;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+h2 {
+    
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #dbd11e;
+    margin: 10px 0 30px 0px;
+}
+
+.textWithImg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+img {
+    position: relative;
+    display: flex;
+    padding-top: 5px;
+    padding-left: 5px;
+    animation-iteration-count: 5;
+}
+
+.registration-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 800px;
+}
+
+span {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.uiverse {
+    --duration: 7s;
+    --easing: linear;
+    --c-color-1: rgba(14, 171, 250, 0.7);
+    --c-color-2: #ff9d0087;
+    --c-color-3: #4de9428f;
+    --c-color-4: rgba(244, 220, 7, 0.533);
+    --c-shadow: rgba(238, 20, 20, 0.499);
+    --c-shadow-inset-top: rgba(245, 142, 24, 0.648);
+    --c-shadow-inset-bottom: rgba(255, 250, 215, .8);
+    --c-radial-inner: #d015ff9e;
+    --c-radial-outer: #d015ff9e;
+    --c-color: #fff;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    display: table;
+    border-radius: 24px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--c-color);
+    background: radial-gradient(circle, var(--c-radial-inner), var(--c-radial-outer) 80%);
+    box-shadow: 0 0 14px var(--c-shadow);
+}
+
+.uiverse:before {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    box-shadow: inset 0 3px 12px var(--c-shadow-inset-top), inset 0 -3px 4px var(--c-shadow-inset-bottom);
+}
+
+.uiverse .wrapper {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
+    border-radius: 24px;
+    min-width: 190px;
+    padding: 12px 0;
+}
+
+.uiverse .wrapper span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.uiverse .wrapper .circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    filter: blur(var(--blur, 8px));
+    background: var(--background, transparent);
+    transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
+    animation: var(--animation, none) var(--duration) var(--easing) infinite;
+}
+
+.uiverse .wrapper .circle.circle-1,
+.uiverse .wrapper .circle.circle-9,
+.uiverse .wrapper .circle.circle-10 {
+    --background: var(--c-color-4);
+}
+
+.uiverse .wrapper .circle.circle-3,
+.uiverse .wrapper .circle.circle-4 {
+    --background: var(--c-color-2);
+    --blur: 14px;
+}
+
+.uiverse .wrapper .circle.circle-5,
+.uiverse .wrapper .circle.circle-6 {
+    --background: var(--c-color-3);
+    --blur: 16px;
+}
+
+.uiverse .wrapper .circle.circle-2,
+.uiverse .wrapper .circle.circle-7,
+.uiverse .wrapper .circle.circle-8,
+.uiverse .wrapper .circle.circle-11,
+.uiverse .wrapper .circle.circle-12 {
+    --background: var(--c-color-1);
+    --blur: 12px;
+}
+
+.uiverse .wrapper .circle.circle-1 {
+    --x: 0;
+    --y: -40px;
+    --animation: circle-1;
+}
+
+.uiverse .wrapper .circle.circle-2 {
+    --x: 92px;
+    --y: 8px;
+    --animation: circle-2;
+}
+
+.uiverse .wrapper .circle.circle-3 {
+    --x: -12px;
+    --y: -12px;
+    --animation: circle-3;
+}
+
+.uiverse .wrapper .circle.circle-4 {
+    --x: 80px;
+    --y: -12px;
+    --animation: circle-4;
+}
+
+.uiverse .wrapper .circle.circle-5 {
+    --x: 12px;
+    --y: -4px;
+    --animation: circle-5;
+}
+
+.uiverse .wrapper .circle.circle-6 {
+    --x: 56px;
+    --y: 16px;
+    --animation: circle-6;
+}
+
+.uiverse .wrapper .circle.circle-7 {
+    --x: 8px;
+    --y: 28px;
+    --animation: circle-7;
+}
+
+.uiverse .wrapper .circle.circle-8 {
+    --x: 28px;
+    --y: -4px;
+    --animation: circle-8;
+}
+
+.uiverse .wrapper .circle.circle-9 {
+    --x: 20px;
+    --y: -12px;
+    --animation: circle-9;
+}
+
+.uiverse .wrapper .circle.circle-10 {
+    --x: 64px;
+    --y: 16px;
+    --animation: circle-10;
+}
+
+.uiverse .wrapper .circle.circle-11 {
+    --x: 4px;
+    --y: 4px;
+    --animation: circle-11;
+}
+
+.uiverse .wrapper .circle.circle-12 {
+    --blur: 14px;
+    --x: 52px;
+    --y: 4px;
+    --animation: circle-12;
+}
+
+@keyframes circle-1 {
+    33% {
+        transform: translate(0px, 16px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(12px, 64px) translateZ(0);
+    }
+}
+
+@keyframes circle-2 {
+    33% {
+        transform: translate(80px, -10px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(72px, -48px) translateZ(0);
+    }
+}
+
+@keyframes circle-3 {
+    33% {
+        transform: translate(20px, 12px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(12px, 4px) translateZ(0);
+    }
+}
+
+@keyframes circle-4 {
+    33% {
+        transform: translate(76px, -12px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(112px, -8px) translateZ(0);
+    }
+}
+
+@keyframes circle-5 {
+    33% {
+        transform: translate(84px, 28px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(40px, -32px) translateZ(0);
+    }
+}
+
+@keyframes circle-6 {
+    33% {
+        transform: translate(28px, -16px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(76px, -56px) translateZ(0);
+    }
+}
+
+@keyframes circle-7 {
+    33% {
+        transform: translate(8px, 28px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(20px, -60px) translateZ(0);
+    }
+}
+
+@keyframes circle-8 {
+    33% {
+        transform: translate(32px, -4px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(56px, -20px) translateZ(0);
+    }
+}
+
+@keyframes circle-9 {
+    33% {
+        transform: translate(20px, -12px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(80px, -8px) translateZ(0);
+    }
+}
+
+@keyframes circle-10 {
+    33% {
+        transform: translate(68px, 20px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(100px, 28px) translateZ(0);
+    }
+}
+
+@keyframes circle-11 {
+    33% {
+        transform: translate(4px, 4px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(68px, 20px) translateZ(0);
+    }
+}
+
+@keyframes circle-12 {
+    33% {
+        transform: translate(56px, 0px) translateZ(0);
+    }
+
+    66% {
+        transform: translate(60px, -32px) translateZ(0);
+    }
+}
+
+
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000007a;
+    z-index: 999;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255 255 255);
+    max-width: 500px;
+    border-radius: 5px;
+    margin-top: 40px;
+    width: 500px;
+}
+
+/* При узком экране изменяем на один столбец */
+@media (max-width: 600px) {}
+
+
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    align-items: center;
+}
+
+.coolinput label.text {
+    color: #44783c;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 10px 7px;
+    padding: 0 3px;
+    background: transparent;
+    width: auto;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #44783c solid;
+    border-radius: 5px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    max-width: 750px;
+}
+
+#submitButton {
+    margin-bottom: 40px;
+}
+
+
+.coolinput input[type=text].input:focus {
+    outline: none;
+}
+
+#output ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.left-cats {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 0%;
+}
+
+.cats-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+}
+
+.right-cats {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 62%;
+}
+
+.left-cats img {
+    margin-top: -200px;
+}
+
+.right-cats img {
+    margin-top: -210px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+.for-my-lovely-kitten {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-my-lovely-kitten h1{
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.our-collage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-collage img {
+    max-width: 800px;
+}
