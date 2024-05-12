@@ -4,18 +4,25 @@ var popupContainer = document.getElementById('popupContainer');
 var submitButton = document.getElementById('submitButton');
 var outputContainer = document.getElementById('output');
 
-// Добавляем обработчик события на кнопку "Начать"
 startButton.addEventListener('click', function () {
     popupContainer.style.display = 'block';
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+window.addEventListener('click', function (event) {
+    if (event.target == popupContainer) {
+        popupContainer.style.display = 'none';
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
     const inputs = document.querySelectorAll(".coolinput input");
     const submitButton = document.querySelector(".end #submitButton");
 
-    submitButton.addEventListener("click", function(event) {
+    submitButton.addEventListener("click", function (event) {
         event.preventDefault(); // Отменяем стандартное действие формы (перезагрузку страницы)
-        
+
         const values = [];
         inputs.forEach(input => {
             values.push(input.value.trim());
@@ -32,6 +39,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
 
 
