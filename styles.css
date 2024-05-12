@@ -9,6 +9,8 @@ body {
     flex-direction: column;
     background-image: url('white-paper.png');
     background-size: 179px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1 {
@@ -700,6 +702,11 @@ p {
     .popup {
         width: 350px;
     }
+
+    .our-collage img {
+        width: 450px;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -713,6 +720,10 @@ p {
 
     .cats-bottom {
         margin-top: 38%;
+    }
+
+    .our-collage img {
+        width: 400px;
     }
 }
 
@@ -735,10 +746,28 @@ p {
 @media screen and (max-width:410px) {
     body {
         margin: 0;
-      
+    }
+
+    .our-collage img {
+        width: 350px;
     }
 
     .cats-bottom {
         margin-top: 48%;
+    }
+
+    .popup {
+        top: 35%;
+        left: 45%;
+    }
+
+    .left-cats {
+        left: -7%;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .our-collage img {
+        width: 320px;
     }
 }
